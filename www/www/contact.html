@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Nowmin Naj Manisha nowminmanisha@gmail.com">
+    <link rel="stylesheet" href="sorrento.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="inner-wrapper">
+            <header>
+                <img src="image/sorrento_by_the_sea_logo.jpg" width="960" height="200" alt="sorrento by the sea">
+            </header>
+
+            <div id="burgerbtn" onclick="openNav()">&#9776;</div>
+
+            <nav id="navig" class="overlay">
+                <a href="javascript:void(0)" id="closebtn" onclick="closeNav()">&times;</a>
+                <div id="overlay-content">
+                    <ul>
+                        <li><a href="index.html" >Home</a></li>
+                        <li><a href="apartment.html">The Apartment</a></li>
+                        <li><a href="booking.html">Bookings</a></li>
+                        <li><a href="local_highlights.html">Local Highlights</a></li>
+                        <li><a href="contact.html" id="current">Contact</a></li>
+
+                    </ul>
+
+                </div>
+            </nav>
+            <main>
+
+                
+
+                
+                    <div class="row">
+                        <div class="column" >
+                            <h2>Contact details</h2>
+                            
+                            <address>
+                                Information and Bookings<br>
+                                0435 123 456<br>
+                                42 Holyrood Avenue<br>
+                                Sorrento VIC 3943<br>
+                                
+                            </address>
+                            <h1>Getting there</h1>
+                            <h2>Map of Sorrento</h2>
+                            <img src="image/map.png" width="650" height="338" alt="sorrento by the sea" id="map">
+                            <h2>How to get to Sorrento by the Sea</h2>
+                            <p>It is easy to find. From Melbourne, take the Monash Freeway, connect onto the Eastlink heading for Portsea, then onto
+                            the Peninsula link to Sorrento.
+                            Another option is the scenic drive around the beach. Although longer, it allows you to experience the coastline from
+                            Port Melbourne to Sorrento.</p>
+                            <h2>Ferry</h2>
+                            <p>
+                            If you choose to come across on the Queenscliff/Sorrento Ferry, it is only a 2 minute drive from the Ferry Depot.
+                            If you are a foot passenger we are happy to meet you at the Sorrento ferry at. Just phone us on 0435 123 456 as you
+                            arrive.</p>
+                            
+                            
+
+                        </div>
+                        <div class="column" >
+                            <h1>Enquiry Form</h1>
+                            <div id="form">
+                                <form action="contact.php" method="post">
+                                    <label for="fname">First Name:</label>
+                                    <input type="text" id="fname" name="fname" maxlength="30" required>
+                                    <label for="lname">Last Name:</label>
+                                    <input type="text" id="lname" name="lname" maxlength="30" required>
+                                    <label for="email">Email:</label>
+                                    <input type="text" id="email" name="email" maxlength="40" required>
+                                    <label for="date">Date:</label>
+                                    <input type="date" id="date" name="date" >
+                                    <label for="quantity">Number of night:</label>
+                                    <input type="number" id="quantity" min="1" >
+                                    <label for="message">Message:</label>
+                                    <textarea id="message" name="message" maxlength="1500"></textarea>
+                                    <button id="submit" type="submit" name="login">Submit</button>
+                                </form>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <!--  consider CTA ... BOOK NOW  -->
+
+
+               
+            </main>
+            <footer>
+
+                <ul>
+                    <li>&copy; Sorrento By The Sea 20xx</li>
+                    <li><a href="privacy.html">Privacy</a></li>
+                    <li><a href="email.php">Email</a></li>
+                    <li><a href="https://www.facebook.com/sorrentobythesea"><img src="image/facebook_small.png"
+                                width="21" height="20" alt="follow Sorrento By The Sea on Facebook"></a></li>
+                    <li><a href="https://www.instagram.com/sorrentobythesea"><img src="image/instagram_small.png"
+                                width="21" height="20" alt="follow Sorrento By The Sea on Instagram"></a></li>
+                    <li><a href="https://www.twitter.com/sorrentobythesea"><img src="image/twitter_small.png" width="21"
+                                height="20" alt="follow Sorrento By The Sea on twitter"></a></li>
+                    <li><a href="https://www.youtube.com/sorrentobythesea"><img src="image/youtube-variation_small.png"
+                                width="21" height="20" alt="follow Sorrento By The Sea on youtube"></a></li>
+
+                </ul>
+
+            </footer>
+        </div>
+    </div>
+    <script>
+        function openNav() {
+            document.getElementById("navig").style.height = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("navig").style.height = "0%";
+        }
+    </script>
+</body>
+
+</html>

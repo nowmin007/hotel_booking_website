@@ -1,0 +1,317 @@
+* {
+    margin: 0em;
+    padding: 0em;
+    font-size: 100%;
+    border-style: none;
+    list-style-type: none;
+}
+body {
+    font-family: Helvetica, Calibri, suitable default;
+    background-color: rgb(255, 255, 255);
+}
+#wrapper {
+    max-width: 960px;
+    background-color: rgb(229, 242, 253);
+    margin: auto;
+    padding: 0px 2px;
+}
+
+main a {
+    text-decoration: none;
+}
+
+section {
+    max-width: 450px;
+    margin: auto;
+}
+main img {
+            
+    padding: 0;
+}
+#beach3{
+    max-width: 640px;
+    width: 100%;
+    height: auto;
+    
+}
+#apartment1{
+    max-width: 450px;
+    width: 100%;
+    height: auto;
+  
+}
+#apartment2{
+    max-width: 450px;
+    width: 100%;
+    height: auto;
+    
+}
+#apartment3{
+    max-width: 450px;
+    width: 100%;
+    height: auto;
+  
+}
+#apartment4{
+    max-width: 450px;
+    width: 100%;
+    height: auto;
+    
+}
+#map{
+    max-width: 650px;
+    width: 100%;
+    height: auto;
+}
+header img{
+    width: 100%;
+    max-width: 960px;
+    height: auto;
+    vertical-align: bottom;
+}
+#burgerbtn {
+    position: absolute;
+    top: 65px;
+    right: 8px;
+    display: block;
+    width: 20%;
+    text-align: right;
+    cursor: pointer;
+    font-size: 32px;
+    color: #fff;
+}
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(182, 198, 226, 0.9);
+    overflow-y: hidden;
+    transition: 0.5s;
+}
+#overlay-content {
+    position: relative;
+    top: 12%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+nav ul {
+    display: flex;
+    flex-direction: column;
+    line-height: 2.2em;
+    
+}
+
+
+.overlay a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #4d1d18;
+    transition: 0.3s;
+}
+#closebtn {
+    position: absolute;
+    top: 0px;
+    right: 14px;
+    font-size: 60px;
+    color: #525138;
+    text-align: right;
+    width: 20%;
+}
+h1{
+    font-size: 20px;
+    color: #87423c;
+    margin-top: 10px;
+}
+h2 {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #4d1d18;
+}
+p {
+    margin-top: 8px;
+    color: rgb(105, 32, 32);
+    font-size: 15px;
+    line-height: 150%;
+}
+section a {
+    color: #87423c;
+}
+footer {
+    max-width: 346px;
+    margin: auto;
+    padding: 14px 0px 16px 0px;
+    font-size: 11px;
+    color: #87423c;
+}
+
+footer ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer a {
+    color: #87423c;
+    text-decoration: none;
+}
+label {
+    display: inline-block;
+    padding: 1em;
+    width: 150px;
+}
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  #submit{
+    display: block;
+    margin-left: 17rem;
+  }
+
+@media only screen and (min-width: 480px) {
+    body {
+        background-color: #fff;
+    }
+   
+  
+    #wrapper {
+        padding: 0px;
+    }
+
+    #burgerbtn {
+        display: none;
+    }
+
+    #closebtn {
+        display: none;
+    }
+    h1{
+        font-size: 36px;
+        color: #87423c;
+        margin-top: 14px;
+    }
+    h2 {
+        margin-top: 14px;
+        font-size: 24px;
+        color: #4d1d18;
+    }
+    p {
+        margin-top: 8px;
+        color: rgb(105, 32, 32);
+        font-size: 14px;
+        line-height: 150%;
+    }
+
+    .overlay {
+        position: relative;
+    }
+    #apartment1{
+       margin: auto;
+    }
+    #apartment2{
+        margin: auto;
+    }
+    #apartment3{
+        margin: auto;
+     }
+     #apartment4{
+         margin: auto;
+     }
+    #map{
+        margin: auto;
+    }
+    #submit{
+        display: block;
+        margin-left: 25rem;
+      }
+
+    nav ul {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        margin: 1rem;
+    }
+
+        div ul {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            margin: 1rem;
+           
+        }
+        
+        main img {
+            
+            padding: 0;
+            margin-left: 10rem;
+        }
+        
+       
+   
+    #overlay-content {
+        margin-top: 0;
+    }
+    
+    
+
+   
+
+    section {
+        max-width: 800px;
+    }
+
+    footer {
+        max-width: 346px;
+    }
+
+    .overlay a {
+        font-size: 22px;
+    }
+
+    #current {
+        color: rgb(200, 124, 124);
+    }
+
+    nav a:hover {
+        color: #555;
+    }
+      
+   .row {
+       display: flex;
+   }
+
+   /* Create two equal columns that sits next to each other */
+   .column {
+       flex: 50%;
+       padding: 10px;
+       height: auto;
+       /* Should be removed. Only for demonstration */
+   }
+   label {
+       display: inline-block;
+       padding: 1em;
+       width: 150px;
+   }
+
+   input {
+       padding: 5px;
+   }
+
+   button  {
+       padding: 0.5em;
+       margin: 1em;
+   }
+   textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+   }
+
+}
